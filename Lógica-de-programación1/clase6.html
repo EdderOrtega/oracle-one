@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #6 de lógica de programación de Alura + Oracle One</title>
+</head>
+<body>
+    <script>
+        //de una funcion debes saber que recibe,que procesa y que devuelve
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase)
+        saltarlinea()
+    }
+
+    function calcularImc(peso,altura){
+        return peso / (altura * altura)
+    }
+
+    let imcChristian = calcularImc(72,1.95)
+    let imcCecilia = calcularImc(55,1.60)
+    let promedio = (imcCecilia + imcChristian) /2
+    imprimir("El promedio del imc calculado de Christian y Celilia es: " + promedio)
+
+    imprimir("El promedio del imc calculado de Christian y Celilia es: " + (calcularImc(72,1.95)+calcularImc(55,1.60))/2)
+    
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

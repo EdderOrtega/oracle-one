@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #4 de lógica de programación de Alura + Oracle One</title>
+</head>
+<body>
+    <script>
+        //declarar funciones siempre al inicio de javascript
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+    //funcion con parametros 
+    function imprimir(frase){
+        document.write(frase)
+        //podemos llamar a otra funcion dentro de una funcion para ahorrar lineas de codigo
+        saltarlinea()
+    }
+
+    let año = 2025;
+    imprimir("Hola amigos")
+    //saltarlinea()
+    imprimir("Juan tiene: " + (año - 2000) + " años")
+    //saltarlinea()
+    imprimir("Pedro tiene: " + (año - 1998) + " años")
+    //saltarlinea()
+    año = 2030;
+    imprimir("Carlos tiene: " + (año - 2010) + " años")
+
+
+
+    </script>
+</body>
+</html>

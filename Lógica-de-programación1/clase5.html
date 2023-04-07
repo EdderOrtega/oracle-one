@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #5 de lógica de programación de Alura + Oracle One</title>
+</head>
+<body>
+    <script>
+        //calculando indice corporal de personas
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase)
+        saltarlinea()
+    }
+
+    function calcularImc(peso,altura,nombre){
+        imc = peso / (altura*altura)
+        imprimir("El imc calculado de " + nombre + " es: " + imc)
+    }
+    calcularImc(71,1.78,"Christian")
+    calcularImc(95,1.93,"Eduardo")
+
+    //de esta forma seria si no usaramos funciones ni parametros,son muchas mas lineas
+    //let pesoCrhistian = 71;
+    //let alturaCrhistian = 1.78;
+    //let imcChristian = pesoCrhistian /(alturaCrhistian * alturaCrhistian)
+    //imprimir("El IMC de Christian es: " + imcChristian)
+    //let imcChristian = calcularImc(pesoCrhistian,alturaCrhistian)
+    //imprimir("El IMC de Christian es: " + imcChristian)
+
+    //let pesoEduardo = 95;
+    //let alturaEduardo = 1.93;
+    //let imcEduardo = pesoEduardo /(alturaEduardo * alturaEduardo)   
+    //imprimir("El IMC de Eduardo es: " + imcEduardo)
+    //let imcEduardo = calcularImc(pesoEduardo,alturaEduardo)   
+    //imprimir("El IMC de Eduardo es: " + imcEduardo)
+
+
+
+    </script>
+</body>
+</html>

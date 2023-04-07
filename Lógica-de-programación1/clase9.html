@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #9 de lógica de programación de Alura + Oracle One</title>
+</head>
+<body>
+    <h3>¿Alcohol o gasolina?</h3>
+    <script>
+        function diferenciaCombustible(a,b){
+            return a/b;
+        }
+        //un auto tiene un tanque de 40litros 
+        let tanque = 40;
+        //el auto recorre 480km con gasolina
+        let kmGasolina = 480;
+        // ¿cuántos kilómetros recorre el carro por cada litro de gasolina?
+        document.write("Los Kilometros recorridos del auto con gasolina son :" + diferenciaCombustible(kmGasolina,tanque))
+        document.write("<br>")
+        //el auto recorre 300km con Alcohol
+        let kmAlcohol = 300;
+        //¿Cuál es el la eficiencia del carro usando alcohol?
+        document.write("Los Kilometros recorridos del auto con alcohol son :" + diferenciaCombustible(kmAlcohol,tanque))
+
+
+    </script>
+</body>
+</html>

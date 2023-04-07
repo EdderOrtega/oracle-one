@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #7 de lógica de programación de Alura + Oracle One</title>
+</head>
+<body>
+    <script>
+    function saltarlinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write("<h1>Calculadora de su IMC</h1>") 
+        saltarlinea()
+        document.write(frase)
+        saltarlinea()
+    }
+    //función con 2 parámetros con la fórmula para calcular el imc
+    function calcularImc(peso,altura){
+        return peso / (altura * altura)
+    }
+    //preguntando al usuario sus datos
+    let nombreUsuario = prompt("Ingrese su nombre")
+    let pesoUsuario = prompt(nombreUsuario + ", diga su peso")
+    let alturaUsuario = prompt(nombreUsuario + ", diga su altura")
+    //llamdando a la función en una variable
+    let imcCalculado = calcularImc(pesoUsuario,alturaUsuario)
+
+    imprimir(nombreUsuario + " su IMC calculado es: " + Math.round(imcCalculado))
+
+    </script>
+</body>
+</html>
